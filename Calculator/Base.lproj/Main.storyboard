@@ -306,7 +306,7 @@
                                     <constraint firstItem="4ug-S7-FgL" firstAttribute="top" secondItem="zMU-CQ-aLh" secondAttribute="bottom" constant="1" id="zMs-8I-trj"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-S5-gry">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-S5-gry">
                                 <rect key="frame" x="36" y="45" width="377" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="PJp-te-N8T"/>
