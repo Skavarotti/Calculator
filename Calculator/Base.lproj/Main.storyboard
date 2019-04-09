@@ -18,12 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="7U1-TW-BAV">
-                                <rect key="frame" x="1" y="45" width="412" height="120"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o7q-OB-uNc">
+                                <rect key="frame" x="1" y="45" width="35" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="EWb-J3-cCH"/>
+                                    <constraint firstAttribute="height" constant="120" id="NVM-FE-DbG"/>
+                                    <constraint firstAttribute="width" constant="35" id="an5-MD-rx6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -32,31 +33,43 @@
                                 <subviews>
                                     <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-VQ-Okd">
                                         <rect key="frame" x="1" y="1" width="102.33333333333333" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.8729903698" green="0.1775942147" blue="0.19927653670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="C"/>
+                                        <connections>
+                                            <action selector="pressedButtonClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtR-lA-7zN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoX-jX-Ixi">
                                         <rect key="frame" x="104.33333333333334" y="1" width="102.33333333333334" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="+/-"/>
+                                        <connections>
+                                            <action selector="pressedSignChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEc-sG-3BH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-BS-LjU">
                                         <rect key="frame" x="207.66666666666663" y="1" width="102" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="√"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="50"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="∙"/>
+                                        <connections>
+                                            <action selector="pressedPoint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPr-Oa-4J5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1f-b8-wIq">
                                         <rect key="frame" x="310.66666666666669" y="1" width="102.33333333333331" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="%"/>
+                                        <connections>
+                                            <action selector="pressedPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBd-hE-AiU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9U-nY-t6K">
                                         <rect key="frame" x="1" y="140" width="102.33333333333333" height="138"/>
@@ -90,12 +103,12 @@
                                     </button>
                                     <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwn-Y6-QpO">
                                         <rect key="frame" x="310.66666666666669" y="140" width="102.33333333333331" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="1" green="0.727617921" blue="0.13842235510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="÷"/>
                                         <connections>
-                                            <action selector="pressedDivision:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzb-iF-H43"/>
+                                            <action selector="pressedOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CqN-27-uGb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rp-Ib-DPb">
@@ -130,12 +143,12 @@
                                     </button>
                                     <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmv-HP-f8k">
                                         <rect key="frame" x="310.66666666666669" y="279" width="102.33333333333331" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="1" green="0.727617921" blue="0.13842235510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="×"/>
                                         <connections>
-                                            <action selector="pressedMultiplication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TeM-zG-1ZR"/>
+                                            <action selector="pressedOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apa-vo-kQT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWJ-i8-2aE">
@@ -170,12 +183,12 @@
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQH-AS-Ked">
                                         <rect key="frame" x="310.66666666666669" y="418" width="102.33333333333331" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="1" green="0.727617921" blue="0.13842235510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="-"/>
                                         <connections>
-                                            <action selector="pressedMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hu-VP-3zf"/>
+                                            <action selector="pressedOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMK-ws-uH6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-Zz-NOp">
@@ -190,12 +203,12 @@
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rir-qW-yt1">
                                         <rect key="frame" x="310.66666666666669" y="557" width="102.33333333333331" height="138"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="1" green="0.727617921" blue="0.13842235510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="40"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="+"/>
                                         <connections>
-                                            <action selector="pressedPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nj-c7-sfg"/>
+                                            <action selector="pressedOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0D8-wm-UPS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDt-cK-aai">
@@ -293,22 +306,35 @@
                                     <constraint firstItem="4ug-S7-FgL" firstAttribute="top" secondItem="zMU-CQ-aLh" secondAttribute="bottom" constant="1" id="zMs-8I-trj"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-S5-gry">
+                                <rect key="frame" x="36" y="45" width="377" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="PJp-te-N8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bR2-tt-Tpr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Tq-kS-I0C"/>
-                            <constraint firstItem="7U1-TW-BAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="C3N-4W-rfp"/>
-                            <constraint firstItem="7U1-TW-BAV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="Hdv-mJ-gVp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7U1-TW-BAV" secondAttribute="trailing" constant="1" id="K9P-bM-IxL"/>
+                            <constraint firstItem="bR2-tt-Tpr" firstAttribute="top" secondItem="3c8-S5-gry" secondAttribute="bottom" constant="1" id="7e5-Sl-9hT"/>
+                            <constraint firstItem="o7q-OB-uNc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="1" id="AlS-6f-sYh"/>
+                            <constraint firstItem="o7q-OB-uNc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="Ibp-JN-zSe"/>
+                            <constraint firstItem="3c8-S5-gry" firstAttribute="leading" secondItem="o7q-OB-uNc" secondAttribute="trailing" id="O5n-RO-agf"/>
+                            <constraint firstItem="3c8-S5-gry" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="R3E-sv-E4d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3c8-S5-gry" secondAttribute="trailing" constant="1" id="X7B-I2-4vs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bR2-tt-Tpr" secondAttribute="trailing" id="YGQ-zM-gyX"/>
+                            <constraint firstItem="bR2-tt-Tpr" firstAttribute="top" secondItem="o7q-OB-uNc" secondAttribute="bottom" constant="1" id="azf-n3-7yN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bR2-tt-Tpr" secondAttribute="bottom" id="ftF-AQ-5c9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bR2-tt-Tpr" secondAttribute="bottom" id="gkb-hZ-OhU"/>
-                            <constraint firstItem="bR2-tt-Tpr" firstAttribute="top" secondItem="7U1-TW-BAV" secondAttribute="bottom" constant="1" id="j3N-4Y-O2F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="7U1-TW-BAV" id="5NA-Or-RR7"/>
+                        <outlet property="labelSign" destination="o7q-OB-uNc" id="MRg-KL-jY5"/>
+                        <outlet property="resultLabel" destination="3c8-S5-gry" id="Rb8-3V-xWU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
